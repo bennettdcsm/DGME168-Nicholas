@@ -22,20 +22,19 @@ width: 100%;
 	background-color: #A4BF7A;
     padding: 10px 40px;
     display: flex;
+	flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+	
 }
 
 .logo {
-    width: clamp(100px, 25vw, 180px);
-	height: auto;
+    width: 150px;
 	max-width: 40vw;
 }
 
-.logo img {
-    width: 100%;
-}
+
 
 .nav {
     display: flex;
@@ -70,7 +69,7 @@ width: 100%;
 
 /* Main content styles */
 .main-content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
@@ -142,6 +141,7 @@ margin-left: auto;
 /* Skills list styles */
 .skills-list {
     margin: 20px 0 -20px;
+	width: 100%;
     padding: 10px;
     border-top: 3px solid #ccc;
     color: #333;
@@ -231,7 +231,7 @@ h3 {
 	
 	.nav-button {
         width: 90vw;
-        max-width: 200px;
+        max-width: 130px;
         text-align: center;
         font-size: .9rem;
     }

@@ -129,6 +129,10 @@ iframe {
     text-align: center;
 }
 
+.service-item:hover{
+  transform: scale(1.02); 
+	transition: size 1s ease;
+}
 
 .service-title {
     font-size: 16px;
