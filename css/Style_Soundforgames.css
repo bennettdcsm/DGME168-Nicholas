@@ -1,0 +1,273 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+.header {
+width: 100%;
+	background-color: #A4BF7A;
+    padding: 10px 40px;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+
+.nav {
+    display: flex;
+    gap: 10px;
+	flex-wrap: wrap;
+}
+
+.nav-button {
+     background-color: #b8d1d1;
+    padding: 8px 12px;
+	margin: 2px;
+    border-radius: 6px;
+	 border: 1px #026873 solid;
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.nav a{
+	text-decoration: none;
+	color:#274552;
+}
+
+.nav-button:hover {
+    background-color: #9ab8b8;
+  transform: scale(1.05); 
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sound-description {
+	text-align: left;
+	max-width: 350px;
+	margin: auto;
+}
+
+.sound-icon {
+    width: 170px;
+    margin: 40px auto;
+}
+
+h2 {
+	font-family:"Audiowide", sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.description {
+    text-align: left;
+	padding: 10px;
+	border-bottom: 3px solid #ccc;
+    line-height: 1.2rem;
+    color: #333;
+}
+
+/* Services grid styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.service-item {
+    text-align: center;
+	transition: transform .2s;
+}
+
+.service-item:hover{
+  transform: scale(1.02); 
+	transition: size .2s ease;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Skills list styles */
+.skills-list {
+    margin: 20px 0 -20px;
+    padding: 10px;
+    border-top: 3px solid #ccc;
+    color: #333;
+}
+
+
+
+/* Footer styles */
+.footer {
+    width: 100%;
+	background-color: #A4BF7A;
+    padding: 16px 8px;
+	display: flex;
+	flex-direction: column;   /* Stack content vertically */
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+	transform: scale(1.1);
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+ 
+	 .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+	
+	.sound-icon {
+    width: 150px;
+	}
+	
+	.service-icon {
+    max-width: 100%; 
+}
+		
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    border: none;
+}
+	
+	.nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 6px;
+       
+    }
+    .nav-button {
+		width: 90vw;
+        max-width: 130px;
+        font-size: .8rem;
+      
+    }
+	
+	.main-content {
+        padding: 30px 10px;
+		margin: 20px;
+    }
+   
+    .logo {
+        margin-bottom: 10px;
+    }
+	
+	.service-item{
+		max-width: 110%;
+		text-align: center;
+	}
+	
+	.skills-list {
+    margin: 20px 0 -20px;
+    padding: 10px;
+    border-top: 3px solid #ccc;
+    color: #333;
+}
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+}
+	
+	.service-item{
+		max-width: 110%;
+		text-align: center;
+	}
+	
+iframe {
+    width: 100%;
+    max-width: 90%;
+    height: 300px;
+    border: none;
+}
+
+.sound-description {
+	text-align: left;
+	max-width: 95%;
+	margin: auto;
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .description {
+        padding: 0 20px;
+    }
+}

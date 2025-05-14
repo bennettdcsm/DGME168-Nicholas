@@ -1,0 +1,337 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+.header {
+width: 100%;
+	background-color: #A4BF7A;
+    padding: 10px 40px;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.nav {
+    display: flex;
+	flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-button {
+     background-color: #b8d1d1;
+    padding: 8px 12px;
+	margin: 2px;
+    border-radius: 6px;
+	 border: 1px #026873 solid;
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s;
+	text-decoration: none;
+    display: inline-block;
+}
+
+.nav a{
+	text-decoration: none;
+	color:#274552;
+}
+
+.nav-button:hover {
+    background-color: #9ab8b8;
+  transform: scale(1.05); 
+}
+
+
+/* Main content styles */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sound-description {
+	
+	text-align: left;
+	max-width: 800px;
+	margin: auto;
+}
+
+
+.sound-icon {
+    width: 200px;
+	max-width: 70vw;
+	padding: 10px;
+    margin: 40px auto;
+	display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+	font-family: "Audiowide", sans-serif;
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.description {
+    margin: 0 auto;
+	text-align: left;
+	padding: 10px;
+    line-height: 1.2;
+    border-bottom: 3px solid #ccc;
+    color: #333;
+}
+
+/* Services grid styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.services-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+
+
+
+.service-item {
+    text-align: center;
+}
+
+
+.service-item:hover{
+  transform: scale(1.02); 
+	transition: size .2s ease;
+}
+
+.service-icon {
+margin-left: auto;		
+}
+
+
+.service-item iframe {
+    width: 100%;
+    max-width: 380px;
+    height: 215px;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+.video-responsive iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+
+/* Skills list styles */
+.skills-list {
+    margin: 20px 0 -20px;
+	width: 100%;
+    padding: 10px;
+    border-top: 3px solid #ccc;
+    color: #333;
+}
+
+.bottom-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background: transparent;
+    position: relative;
+}
+.bottom-btn-container .nav-button {
+    font-size: 12px;
+    padding: 8px 22px;
+}
+
+
+
+/* Footer styles */
+.footer {
+width: 100%;
+	background-color: #A4BF7A;
+    padding: 16px 8px;
+	display: flex;
+	flex-direction: column;   /* Stack content vertically */
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+	transform: scale(1.1);
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+ 
+	 .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+	
+	 .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+		 max-width: 100%;
+  }
+	
+	.service-icon {
+    max-width: 100%;
+    
+}
+	
+	.nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 6px;
+       
+    }
+    .nav-button {
+		width: 90vw;
+        max-width: 130px;
+        font-size: .8rem;
+      
+    }
+	
+	.main-content {
+        padding: 30px 10px;
+		margin: 20px;
+    }
+   
+    .logo {
+        margin-bottom: 10px;
+    }
+	
+	.service-item iframe {
+    width: 100%;
+    max-width: 380px;
+    height: 215px;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 0 auto;
+}
+	
+	
+	.skills-list {
+    margin: 20px 0 -20px;
+     padding: 30px 20px 50px 20px;
+    border-top: 3px solid #ccc;
+    color: #333;
+		
+}
+	
+	 .sound-icon{
+        width: 160px;
+    }
+	
+}
+
+
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 4vw;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 6px;
+        align-items: center;
+    }
+    .nav-button {
+        width: 90vw;
+        max-width: 170px;
+        text-align: center;
+        font-size: .8rem;
+    }
+    .main-content {
+        padding: 18px 2vw;
+    }
+    
+	
+	.footer {
+        padding: 10px 2vw;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .about-image {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .description {
+        padding: 0 20px;
+    }
+}
+
