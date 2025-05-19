@@ -270,7 +270,7 @@ h3 {
     display: flex;
     margin-left: auto;
 		 position: relative;  /* Enable vertical adjustment */
-    top: -70px;          /* Move hamburger up; adjust this value as needed */
+    top: -100px;          /* Move hamburger up; adjust this value as needed */
   }
   .nav {
     position: absolute;
